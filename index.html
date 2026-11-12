@@ -291,6 +291,14 @@ header{position:absolute;top:0;left:0;width:100%;z-index:4;border:0;background:t
 #modal.task-card .scratch-title,#modal.task-card .answer-bar .answer-unit{font-size:18px}
 @media(max-width:700px){#modal.task-card h2{font-size:26px}#modal.task-card #modal-text,#modal.task-card .answer-row,#modal.task-card .task-answers .inline-answer{font-size:20px}#modal.task-card .answer-row input,#modal.task-card .answer-row select,#modal.task-card .task-answers .inline-answer input,#modal.task-card .task-answers .inline-answer select{font-size:20px}}
 
+
+/* Compact text in task dialogs. */
+#modal.task-card h2{font-size:18px}
+#modal.task-card #modal-text{font-size:13px;line-height:1.5}
+#modal.task-card .answer-row{font-size:13px}
+#modal.task-card .answer-row.inline-answer{font-size:15px}
+#modal.task-card .answer-row input,#modal.task-card .answer-row select,#modal.task-card .answer-row.inline-answer input,#modal.task-card .answer-row.inline-answer select{font-size:15px}
+#modal.task-card .answer-bar .answer-unit{font-size:13px}
 </style>
 </head>
 <body>
@@ -340,7 +348,7 @@ function playReaction(id,done){stopReaction();if(unavailableReactions.has(id)||!
 
 const tasks=[
   {
-    "title": "Угощение для праздника",
+    "title": "Реши задачу",
     "text": "В мастерскую Деда Мороза привезли 14 кг мандаринов и 28 кг яблок. В новогодние подарки положили 24 кг фруктов. Сколько килограммов фруктов осталось в мастерской?",
     "fields": [
       [
@@ -425,7 +433,7 @@ const tasks=[
     ]
   },
   {
-    "title": "Гирлянда для ёлки",
+    "title": "Реши задачу",
     "text": "Эльф согнул проволочную гирлянду в виде ломаной из трёх звеньев длиной 5 см, 3 см и 2 см. Найди длину всей гирлянды.",
     "fields": [
       [
@@ -435,7 +443,7 @@ const tasks=[
     ]
   },
   {
-    "title": "Сладкие подарки",
+    "title": "Реши задачу",
     "text": "Для новогодних подарков эльфы приготовили 5 ящиков конфет по 6 кг и 7 ящиков пряников по 4 кг. Сколько всего килограммов конфет и пряников приготовили?",
     "fields": [
       [
@@ -486,7 +494,7 @@ const tasks=[
     "compare": true
   },
   {
-    "title": "Новогодняя открытка",
+    "title": "Реши задачу",
     "text": "Повышенный уровень. Снегурочка делает прямоугольную новогоднюю открытку длиной 5 см и шириной 2 см. Вычисли периметр и площадь открытки.",
     "fields": [
       [
@@ -547,7 +555,7 @@ const tasks=[
     "expressions": true
   },
   {
-    "title": "Запасы для оленей",
+    "title": "Реши задачу",
     "text": "Перед Новым годом оленям Деда Мороза 6 дней давали по 9 кг моркови в день и 4 дня по 8 кг в день. Сколько килограммов моркови израсходовали всего за все эти дни?",
     "fields": [
       [
@@ -614,7 +622,7 @@ const tasks=[
     "compare": true
   },
   {
-    "title": "Украшения на ёлке",
+    "title": "Реши задачу",
     "text": "На ёлке 20 красных шаров, а золотых в 4 раза меньше, чем красных. На сколько золотых шаров меньше, чем красных?",
     "fields": [
       [
@@ -624,7 +632,7 @@ const tasks=[
     ]
   },
   {
-    "title": "Ленты для подарков",
+    "title": "Реши задачу",
     "text": "Эльф приготовил три ленты для новогодних подарков. Первая лента длиной 9 см, вторая на 3 см длиннее первой, а третья в 2 раза короче второй. Найди общую длину второй и третьей лент.",
     "fields": [
       [
@@ -679,7 +687,7 @@ const tasks=[
     ]
   },
   {
-    "title": "Хоровод у ёлки",
+    "title": "Реши задачу",
     "text": "На новогодний праздник пришли 4 команды по 7 ребят в каждой. Все ребята встали в хоровод вокруг ёлки. Сколько ребят в хороводе?",
     "fields": [
       [
